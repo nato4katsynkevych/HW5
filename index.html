@@ -53,7 +53,9 @@
 				ЭФФЕКТИВНЫЕ РЕШЕНИЯ
 				<br>ДЛЯ ВАШЕГО БИЗНЕСА
 			</h1>
-			<button type="button" class="btn">Заказать услугу</button>
+			<button type="button" class="btn" data-modal-open>Заказать услугу</button>
+
+		</div>
 		</div>
 
 		<section class=" section benefits container">
@@ -103,12 +105,15 @@
 		<section class=" section container">
 			<h2 class="title">Чем мы занимаемся</h2>
 			<ul class="developments">
-				<li class="item"><img src="./images/box1.jpg" alt="desktop" with="370px"></li>
-				<li class="item"><img src="./images/box2.jpg" alt="mobile" with="370px"></li>
-				<li class="item"><img src="./images/box3.jpg" alt="tablet" with="370px"></li>
+				<li class="item"><img src="./images/box1.jpg" alt="desktop" with="370px">
+					<span class="text"> Десктопные приложения</span>
+				</li>
+				<li class="item"><img src="./images/box2.jpg" alt="mobile" with="370px"><span class="text"> Мобильные
+						приложения</span></li>
+				<li class="item"><img src="./images/box3.jpg" alt="tablet" with="370px"><span class="text"> Дизайнерские
+						решения</span></li>
 			</ul>
 		</section>
-
 		<section class="wrapper">
 			<div class="section team container">
 				<h2 class="title">Наша команда</h2>
@@ -259,6 +264,7 @@
 					</svg>
 				</li>
 			</ul>
+		</section>
 
 	</main>
 	<footer class="footer">
@@ -304,7 +310,28 @@
 		</div>
 
 	</footer>
+	<div class="backdrop is-hidden" data-modal>
+		<div class="modal">
+			<h3 class="modal-title">Оставьте свои данные, мы вам перезвоним</h3>
 
+			<p>Имя</p>
+			<input type="text">
+			<p>Телефон</p>
+			<input type="text">
+			<p>Почта</p>
+			<input type="text">
+			<p>Комментарий</p>
+			<input type="text">
+			<p>Соглашаюсь с рассылкой и принимаю Условия договора</p>
+			<button type="button" class="btn">Отправить</button>
+			<button class="btn-close" data-modal-close>
+				<svg class="icon-close">
+					<use href="./images/modal.svg#close"></use>
+				</svg>
+			</button>
+
+		</div>
+		<script src="./js/modal.js"></script>
 </body>
 
 </html>
